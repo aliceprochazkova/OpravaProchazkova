@@ -1,0 +1,106 @@
+/* CSS DOKUMENT K ÚPRAVĚ – mobil */
+.page {
+    background-color: var(--background);
+    padding: 1em;
+}
+
+.section {
+    max-width: 1280px;
+    margin-top: 2em;
+}
+
+
+.section__header div{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.section__list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* article */
+
+.article__title {
+    font-weight: bold;
+    color: var(--dark);
+    margin: 1em;
+}
+
+.article {
+    display: flex;
+    object-fit: cover;
+    background-color: var(--light);
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.article__perex {
+    color: var(--dark);
+    margin: 1em;
+}
+
+.article--pagespeed {  
+   display:flex;
+   gap:1em;
+}
+.article--copywriting {
+ gap:1em;
+}
+.article--checklist {
+ display: flex;
+ gap:1em;
+}
+
+.article__header {
+    display: flex;
+    position: relative;
+    gap:1em;
+}
+
+.article__badge {
+    display: flex;
+    align-self: flex-end;
+    background-color: var(--light);
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    gap: 0.5em;
+    position: absolute;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.article__badge::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 1em;
+    margin-right: 0.5em;
+}
+
+.article--pagespeed .article__badge::before {
+    background-color: var(--pagespeed);
+}
+
+.article--copywriting .article__badge::before {
+    background-color: var(--copywriting);
+}
+
+.article--checklist .article__badge::before {
+    background-color: var(--checklist);
+}
+
+.img-responsive{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
